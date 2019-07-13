@@ -1,0 +1,12 @@
+class __Singleton{
+
+    private static class SingletonHolder{
+        private static __Singleton __singleton = new __Singleton;
+    }
+
+    private __Singleton(){}
+
+    public static __Singleton getInstance(){
+        return SingletonHolder.__singleton;
+    }
+}
